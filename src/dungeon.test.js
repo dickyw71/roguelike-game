@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Dungeon, { Room } from './dungeon.js';
 
 test('dungeon exist', () => {
@@ -13,9 +14,26 @@ it('renders without crashing', () => {
   ReactDOM.render(<Dungeon />, div);
 });
 
-it('contains one or more rooms', () => {
+it('renders without crashing', () => {
+  shallow(<Dungeon />);
+});
 
+it('renders without crashing', () => {
+  shallow(<Room />);
+});
+
+it('contains one or more rooms', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<Dungeon />, div);
+
+  const dungeonElement = document.getElementsByClassName('Dungeon');
+  expect(dungeonElement).toBeDefined();
+
+  const roomElement = document.getElementsByClassName('Room');
+  expect(roomElement).toBeDefined();
 })
+
+
 
 test('a room is between 0 and 99 wide', () => {
   let testRoom = new Room;
