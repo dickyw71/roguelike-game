@@ -58,3 +58,5 @@ Each door leads to another room within the dungeon
 Each door may be at any point along the length of the wall
 
 
+the game should procedurally generate a dungeon 
+containing multiple rooms which in turn contain enemies, weapons, player, health items etc.
