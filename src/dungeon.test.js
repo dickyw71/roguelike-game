@@ -23,14 +23,7 @@ it('renders without crashing', () => {
 });
 
 it('contains one or more rooms', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Dungeon />, div);
 
-  const dungeonElement = document.getElementsByClassName('Dungeon');
-  expect(dungeonElement).toBeDefined();
-
-  const roomElement = document.getElementsByClassName('Room');
-  expect(roomElement).toBeDefined();
 })
 
 
