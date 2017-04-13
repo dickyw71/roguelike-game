@@ -51,7 +51,7 @@ Game
                 have a location
 
 
-Each dungeon has a random number of interconnected rooms in the range 5 to 15
+~~Each dungeon has a random number of interconnected rooms in the range 5 to 15~~
 Each room has 4 walls and each wall may have a door
 Each room is rectangular and each side is between 1 and 5 units long
 Each door leads to another room within the dungeon
