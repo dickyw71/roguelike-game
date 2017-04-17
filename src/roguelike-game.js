@@ -1,19 +1,21 @@
-'use strict';
 import React, { Component } from 'react';
+import Dungeon from './dungeon.js';
 
 class RoguelikeGame extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-
+ 
     generateDungeon() {
-        
+        return (
+            <Dungeon></Dungeon>
+        );
     }
 
     render() {
+        const dungeon = this.generateDungeon();
+
         return (
-            <div className="RoguelikeGame"></div>
+            <div className="RoguelikeGame">
+                {dungeon}
+            </div>
         );
     }
 }
