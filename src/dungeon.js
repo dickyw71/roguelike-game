@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import './dungeon.css';
 
 let style = {
-    room: {
+    dungeon: {
         border: "1px solid black",
-        margin: "5px",
-        width: "40px",
-        height: "40px"
+        margin: "10px",
+        width: "900px",
+        height: "900px",
+        background: "#CCCCCC"
+    },
+    room: {
+        margin: "10px",
+        width: "40px",  //  default, will be changed by object
+        height: "40px",  //  default, will be changed by object
+        background: "#FFFFFF"
     }
 };
 
@@ -30,7 +37,7 @@ class Dungeon extends Component {
         }
     
         return (
-            <div className="Dungeon">
+            <div className="Dungeon" style={style.dungeon}>
                 {rooms}    
             </div>
         );
@@ -41,13 +48,20 @@ class Dungeon extends Component {
 class Room extends Component {
     constructor(props) {
         super(props);
-        this.width = Math.floor(Math.random() * 100);
-        this.height = Math.floor(Math.random() * 100);
+        let max = 200;
+        let min = 40;
+        this.width = Math.floor(Math.random() * (max - min) + min);
+        this.height = Math.floor(Math.random() * (max - min) + min);
     }
 
     render() {
+        style.room.width = this.width;
+        style.room.height = this.height;
         return (
-            <div className="RoomContents" style={style.room}>
+            <div 
+                className="RoomContents" 
+                style={style.room} 
+            >
             </div>    
         );
     }
