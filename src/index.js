@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import RoguelikeGame from './roguelike-game';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <RoguelikeGame />,
   document.getElementById('root')
 );
