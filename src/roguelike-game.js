@@ -10,11 +10,9 @@ class RoguelikeGame extends Component {
     }
 
     render() {
-        const dungeon = this.generateDungeon();
-
         return (
             <div className="RoguelikeGame">
-                {dungeon}
+                <Dungeon></Dungeon>
             </div>
         );
     }
