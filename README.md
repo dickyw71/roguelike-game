@@ -50,12 +50,13 @@ Game
                 can move around the dungeon
                 have a location
 
-
-~~Each dungeon has a random number of interconnected rooms in the range 5 to 15~~
-Each room has 4 walls and each wall may have a door
-Each room is rectangular and each side is between 1 and 5 units long
-Each door leads to another room within the dungeon
-Each door may be at any point along the length of the wall
+## Test To-do list
+- ~~Each dungeon has a random number of interconnected rooms in the range 5 to 15~~
+- Each room has 4 walls and each wall may have a door
+- Each room is rectangular and each side is between 1 and 5 units long
+- Each door leads to another room within the dungeon
+- Each door may be at any point along the length of the wall
+- Rooms are connected to their neigbours by corridors
 
 
 the game should procedurally generate a dungeon 
