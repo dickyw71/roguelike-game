@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import './dungeon.css';
 
 let style = {
     room: {
         border: "1px solid black",
-        margin: "5px" 
+        margin: "5px",
+        width: "40px",
+        height: "40px"
     }
 };
 
@@ -25,7 +28,7 @@ class Dungeon extends Component {
         for(let i=0; i < this.calculateRandomNoOfRooms()+1; i++) {
             rooms.push(<Room id="room" key={i.toString()} style={style.room}></Room>);
         }
-        console.log(rooms.length);
+    
         return (
             <div className="Dungeon">
                 {rooms}    
