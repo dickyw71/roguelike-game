@@ -60,4 +60,4 @@ Game
 
 
 the game should procedurally generate a dungeon 
-containing multiple rooms which in turn contain enemies, weapons, player, health items etc.
+containing multiple contented rooms which in turn contain enemies, weapons, player, health items etc.
