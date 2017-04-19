@@ -10,7 +10,7 @@ let style = {
         background: "#CCCCCC"
     },
     room: {
-        margin: "10px",
+        margin: "10px 10px",
         width: "40px",  //  default, will be changed by object
         height: "40px",  //  default, will be changed by object
         background: "#FFFFFF"
@@ -25,8 +25,8 @@ class Dungeon extends Component {
     };
 
     calculateRandomNoOfRooms() {
-        let max = 15;   // Dungeons can have upto 15 rooms
-        let min = 5;    // Dungeons have at least 5 rooms
+        let max = 30;   // Dungeons can have upto 30 rooms
+        let min = 10;    // Dungeons have at least 10 rooms
         return Math.floor(Math.random() * (max-min)+1) + min;
     }
 
@@ -52,14 +52,16 @@ class Room extends Component {
         let min = 40;
         this.width = Math.floor(Math.random() * (max - min) + min);
         this.height = Math.floor(Math.random() * (max - min) + min);
+        this.margin = Math.floor(Math.random() * 100).toString() + "px 10px";
     }
 
     render() {
         style.room.width = this.width;
         style.room.height = this.height;
+        style.room.margin = this.margin
         return (
             <div 
-                className="RoomContents" 
+                className="Room" 
                 style={style.room} 
             >
             </div>    
