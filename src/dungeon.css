@@ -1,3 +1,7 @@
-/*.Room {
-    min-block-size: 20px;
-}*/
+.dungeon {
+   display: flex;
+}
+
+.Room {
+     display: inline-block;
+}
