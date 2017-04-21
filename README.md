@@ -26,6 +26,7 @@ Game
         health
         weapon
         level
+        XP
     Dungeon
         has 
             Rooms
