@@ -28,9 +28,9 @@ it('contains one or more rooms', () => {
 
 
 
-test('a room is between 0 and 99 wide', () => {
+test('a room is between 0 and 199 wide', () => {
   let testRoom = new Room;
   expect(testRoom.width).toBeGreaterThan(0);
-  expect(testRoom.height).toBeLessThan(100);
+  expect(testRoom.height).toBeLessThan(200);
   console.log(testRoom.width, testRoom.height);
 })
