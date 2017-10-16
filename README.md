@@ -37,10 +37,10 @@ Game
                 may randomly contain 
                     enemies
                         can be fought
-                        have a location
+                        have a random location
                     health items (food, potions etc)
                         can be picked up by player 
-                        have a location        
+                        have a random location        
                     weapons
                         can be picked up by player
                         have a location
@@ -58,7 +58,8 @@ Game
 - Each door leads to another room within the dungeon
 - Each door may be at any point along the length of the wall
 - Rooms are connected to their neigbours by corridors
+- Room contains random items
 
 
 the game should procedurally generate a dungeon 
-containing multiple contented rooms which in turn contain enemies, weapons, player, health items etc.
+containing multiple connected rooms which in turn contain enemies, weapons, player, health items etc.
