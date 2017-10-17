@@ -6,15 +6,15 @@ class RoguelikeGame extends Component {
  
     generateDungeon() {
         return (
-            <Dungeon></Dungeon>
+            <Dungeon />
         );
     }
 
     render() {
         return (
-            <div className="RoguelikeGame">
-                <PlayerStatus></PlayerStatus>
-                <Dungeon></Dungeon>
+            <div className="roguelikeGame">
+                <PlayerStatus />
+                <Dungeon />
             </div>
         );
     }
