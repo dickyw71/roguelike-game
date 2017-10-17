@@ -1,0 +1,6 @@
+
+.playerStatus {
+    position: fix;
+    border: 1px dotted rgb(218, 23, 23);
+    margin: 10px;
+}
