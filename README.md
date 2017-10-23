@@ -27,32 +27,40 @@ Game
         weapon
         level
         XP
-    Dungeon
-        has 
-            Rooms
-                have doors (to other rooms) 
-                have walls
-                have floors
-                have ceilings
-                may randomly contain 
-                    enemies
-                        can be fought
-                        have a random location
-                    health items (food, potions etc)
-                        can be picked up by player 
-                        have a random location        
-                    weapons
-                        can be picked up by player
-                        have a location
-            a boss
-                must be found, fought and beaten to win game
-                has a location
-            a player
-                can move around the dungeon
-                have a location
+    has
+        state
+            player initial position
+
+        Dungeon
+            has 
+                Rooms
+                    have doors (to other rooms) 
+                    have walls
+                    have floors
+                    have ceilings
+                    may randomly contain 
+                        enemies
+                            can be fought
+                            have a random location
+                        health items (food, potions etc)
+                            can be picked up by player 
+                            have a random location        
+                        weapons
+                            can be picked up by player
+                            have a random location
+                a boss
+                    must be found, fought and beaten to win game
+                    has a location
+                a player
+                    can move around the dungeon
+                    has a location
+                    has a health value
+                    has a level value
+                    has an XP value
+                    has a weapon
 
 ## Test To-do list
-- ~~Each dungeon has a random number of interconnected rooms in the range 5 to 15~~
+- Each dungeon has a random number of interconnected rooms in the range 5 to 15
 - Each room has 4 walls and each wall may have a door
 - Each room is rectangular and each side is between 1 and 5 units long
 - Each door leads to another room within the dungeon
@@ -63,3 +71,4 @@ Game
 
 the game should procedurally generate a dungeon 
 containing multiple connected rooms which in turn contain enemies, weapons, player, health items etc.
+
