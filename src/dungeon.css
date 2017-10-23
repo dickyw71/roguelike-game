@@ -1,5 +1,10 @@
 .dungeon {
    display: flex;
+   border: 1px solid black;
+   margin: 10px;
+   width: 1000px;
+   height: 1000px;
+   background-color: #ccc;
 }
 
 .room {
