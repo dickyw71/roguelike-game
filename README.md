@@ -33,6 +33,7 @@ Game
 
         Dungeon
             has 
+                Size (width and height)
                 Rooms
                     have doors (to other rooms) 
                     have walls
@@ -58,6 +59,7 @@ Game
                     has a level value
                     has an XP value
                     has a weapon
+                    has a size (width and height)
 
 ## Test To-do list
 - Each dungeon has a random number of interconnected rooms in the range 5 to 15
