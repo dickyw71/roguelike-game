@@ -25,23 +25,23 @@ class Player extends Component {
     }
 
     move(direction) {
-        switch (direction) {
-            case "left":
+        switch (direction.dir) {
+            case "LEFT":
                 if (location.x > 0) {
                     // location.x = location.x -1;
                 }
                 break;
-            case "right":
+            case "RIGHT":
                 if (location.x < 100) {
                     // location.x = location.x +1;
                 }
                 break;
-            case "up":
+            case "UP":
                 if (location.y > 0) {
                     // location.y = location.y -1;
                 }
                 break;
-            case "down":
+            case "DOWN":
                 if (location.y < 100) {
                     // location.y = location.y +1;
                 }
@@ -51,27 +51,27 @@ class Player extends Component {
         }
     }
 
-    handleKeydown = (e) => {
+    handleKeyDown = (e) => {
         let newDirection;
-        
+      
         switch(e.keyCode) {
             case 37:
-                newDirection = { top: 0, left: -1 , dir: LEFT};
+                newDirection = { top: 0, left: -1 , dir: 'LEFT'};
                 break;
             case 38:
-                newDirection = { top: -1, left: 0 , dir: UP};
+                newDirection = { top: -1, left: 0 , dir: 'UP'};
                 break;
             case 39:
-                newDirection = { top: 0, left: 1, dir: RIGHT};
+                newDirection = { top: 0, left: 1, dir: 'RIGHT'};
                 break;
             case 40:
-                newDirection = { top: 1, left: 0, dir: DOWN };
+                newDirection = { top: 1, left: 0, dir: 'DOWN' };
                 break;
             default:
                 return;
         }
 
-        this.props.handlePlayerMovement(newDirection);
+        this.move(newDirection);
     }
 
     render() {
@@ -80,6 +80,10 @@ class Player extends Component {
             >
             </div>
         )
+    }
+
+    componentDidMount() {
+        window.onkeydown = this.handleKeyDown;
     }
 }
 

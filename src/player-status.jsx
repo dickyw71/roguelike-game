@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Player from './player.js';
+import Player from './player.jsx';
 import { Grid, Row, Col } from 'react-bootstrap';
 import "./player-status.css";
 

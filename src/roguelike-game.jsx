@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Dungeon from './dungeon.js';
-import PlayerStatus from './player-status.js'
+import Dungeon from './dungeon.jsx';
+import PlayerStatus from './player-status.jsx'
 
 const defaultGameState = () => {
     
