@@ -2,8 +2,9 @@
 .playerStatus {
     position: fix;
     border: 1px dotted rgb(218, 23, 23);
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .healthStatus {
