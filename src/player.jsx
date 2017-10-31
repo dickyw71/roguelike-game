@@ -28,27 +28,28 @@ class Player extends Component {
         switch (direction.dir) {
             case "LEFT":
                 if (location.x > 0) {
-                    // location.x = location.x -1;
+                    location.x = location.x -1;
                 }
                 break;
             case "RIGHT":
                 if (location.x < 100) {
-                    // location.x = location.x +1;
+                    location.x = location.x +1;
                 }
                 break;
             case "UP":
                 if (location.y > 0) {
-                    // location.y = location.y -1;
+                    location.y = location.y -1;
                 }
                 break;
             case "DOWN":
                 if (location.y < 100) {
-                    // location.y = location.y +1;
+                    location.y = location.y +1;
                 }
                 break;
             default:
                 break;
         }
+        console.log(location);
     }
 
     handleKeyDown = (e) => {
