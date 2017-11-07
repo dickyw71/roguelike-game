@@ -6,6 +6,6 @@ import RoguelikeGame from './roguelike-game';
 import './index.css';
 
 ReactDOM.render(
-  <RoguelikeGame />,
+  <RoguelikeGame dungeonSize={100} playerSize={10}/>,
   document.getElementById('root')
 );

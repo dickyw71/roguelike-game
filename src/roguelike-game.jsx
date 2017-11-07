@@ -8,7 +8,10 @@ const defaultGameState = () => {
 
 
 class RoguelikeGame extends Component {
- 
+
+    constructor(props) {
+        this.state = {dungeonSize: props.dungeonSize, playerSize: props.playerSize};
+    }
     generateDungeon() {
         return (
             <Dungeon />
@@ -19,7 +22,7 @@ class RoguelikeGame extends Component {
         return (
             <div className="roguelikeGame">
                 <PlayerStatus />
-                <Dungeon />
+                <Dungeon size={this.state.dungeonSize} playerSize={this.state.playerSize}/>
             </div>
         );
     }
