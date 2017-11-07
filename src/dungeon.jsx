@@ -15,7 +15,7 @@ class Dungeon extends Component {
             <div 
             className="dungeon"
             >
-                <Player />
+                <Player size={this.props.playerSize}/>
             </div>
         );
     }
