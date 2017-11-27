@@ -1,0 +1,24 @@
+{
+    "weapons": [
+        { 
+            "name": "Molecular Disruptor",
+            "damage": 10
+        },
+        {
+            "name": "Knife",
+            "damage": 6
+        },
+        {
+            "name": "Laser Rifle",
+            "damage": 15
+        },
+        {
+            "name": "Club",
+            "damage": 3
+        },
+        {
+            "name": "Blaster pistol",
+            "damage": "8"
+        }
+    ]
+}
